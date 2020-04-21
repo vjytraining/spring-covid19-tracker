@@ -5,7 +5,6 @@ node {
    stage('build') {
       sh '''
          mvn spring-boot:run
-         mvn clean package -Dboot
        '''
    }
    stage('Create docker image') {
