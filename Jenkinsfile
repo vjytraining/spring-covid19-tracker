@@ -4,7 +4,7 @@ node {
     }
     stage('build') {
        sh '''
-          mvn spring-boot:run
+          mvn clean package
         '''
     }
     stage('Build image') {
