@@ -12,7 +12,7 @@ node {
     }
 
      stage('push image') {
-        docker.withRegistry('https://registry.hub.docker.com', 'DOCKER HUB VIJAY') {
+        docker.withRegistry('https://hub.docker.com/repository/docker/vjytraining/testtracker', 'DOCKER HUB VIJAY') {
             app.push("{env.BUILD_NUMBER}")
             app.push("latest")
          }
