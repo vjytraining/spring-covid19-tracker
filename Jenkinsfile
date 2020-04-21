@@ -8,4 +8,9 @@ node {
          mvn clean package -Dboot
        '''
    }
+   stage('Create docker image') {
+      container('docker') {
+      
+      }
+   }
 }
