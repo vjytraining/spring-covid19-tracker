@@ -13,7 +13,6 @@ node {
 
      stage('push image') {
         docker.withRegistry('https://registry.hub.docker.com', 'DOCKER HUB VIJAY') {
-            app.push("{env.BUILD_NUMBER}")
             app.push("latest")
          }
             echo "trying to docker image to docker hub"
