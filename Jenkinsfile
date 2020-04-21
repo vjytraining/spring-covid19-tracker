@@ -7,9 +7,5 @@ node {
          mvn spring-boot:run
        '''
    }
-   stage('Create docker image') {
-      container('docker') {
-      
-      }
-   }
+   
 }
